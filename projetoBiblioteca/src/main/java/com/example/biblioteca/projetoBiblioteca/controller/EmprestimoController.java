@@ -58,7 +58,7 @@ public class EmprestimoController {
 		return ResponseEntity.status(HttpStatus.CREATED).body(repository.save(emprestimo));
 	}
 	
-	@PutMapping("/{id}")
+	@PutMapping
 	public ResponseEntity<Emprestimo> put (@RequestBody Emprestimo emprestimo) {
 		return ResponseEntity.status(HttpStatus.OK).body(repository.save(emprestimo));
 	}

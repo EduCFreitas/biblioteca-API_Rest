@@ -63,7 +63,7 @@ public class LivroController {
 		return ResponseEntity.status(HttpStatus.CREATED).body(repository.save(livro));
 	}
 	
-	@PutMapping("/{id}")
+	@PutMapping
 	public ResponseEntity<Livro> put (@RequestBody Livro livro) {
 		return ResponseEntity.status(HttpStatus.OK).body(repository.save(livro));
 	}
